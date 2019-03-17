@@ -1,4 +1,115 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "x Open Source - Performer & Producer Wiki"
 theme = "dot"
+
+
+[params]
+primaryColor = "#02007e"
+secondaryColor = "#f9f9f9"
+textColor = "#636363"
+textColorDark = "#242738"
+whiteColor = "#ffffff"
+
+[Languages]
+
+  # English Language
+  [Languages.en]
+  languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+  title = "Doc List"
+  dateFormat = "2 January 2006"
+  home = "Home"
+  logo = "Dot"
+  copyright = "The Hugo Documents are copyright © gethugothemes 2018."
+
+    # navigation
+    [Languages.en.menu]
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Faq"
+        url = "/faq"
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "contact"
+        url = "/contact"
+
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "pages"
+        url = "/pages"
+        hasChildren = true
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Business"
+          URL = "/business"
+          weight = 1
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Production"
+          URL = "/production"
+          weight = 2
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Safety & Health"
+          URL = "/safety-and-health"
+          weight = 3
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Security & Privacy"
+          URL = "/security-and-privacy"
+          weight = 4
+
+
+
+
+    # banner
+    [Languages.en.params.banner]
+      title = "[X] Open Source"
+      description = "Open information and best practices for fostering a sustainable entertainment business."
+      image = "images/banner.jpg"
+      placeholder = "Have a question? Just ask here or enter terms"
+
+    # Topics
+    [Languages.en.params.topics]
+      title = "Find your answer by subject"
+
+    # call to action
+    [Languages.en.params.cta]
+      enable = true
+      title = "Didn't find an answer to your question?"
+      description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+      btnText = "contact us"
+      btnURL = "/contact"
+
+    # contact
+    [Languages.en.params.contact]
+      title = "Got Any Questions"
+      content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
+
+    # footer social icon
+    [[Languages.en.socialIcon]]
+      icon = "ti-facebook"
+      URL = "/#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-twitter-alt"
+      URL = "/#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-vimeo-alt"
+      URL = "/#"
+
+    [[Languages.en.socialIcon]]
+      icon = "ti-instagram"
+      URL = "/#"
+
+
+
